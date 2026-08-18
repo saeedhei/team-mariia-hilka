@@ -1,0 +1,8 @@
+* text=auto eol=lf
+
+# git add --renormalize .
+# git commit -m "Normalize line endings"
+
+
+# git config core.autocrlf false
+# git config core.eol lf

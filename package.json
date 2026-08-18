@@ -1,8 +1,11 @@
 {
-  "name": "team-mariia-hilka",
+  "name": "quiz-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "cleaninstall": "rm -rf .next node_modules && pnpm install",
+    "cleaninstalladmin": "rm -rf .next node_modules pnpm-lock.yaml && pnpm install",
+    "predev": "docker-compose up -d",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -22,5 +25,6 @@
     "eslint-config-next": "16.3.1",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "packageManager": "pnpm@10.28.0"
 }
